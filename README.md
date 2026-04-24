@@ -2,6 +2,8 @@
 
 A polished desktop-first React quiz based on the provided Google Stitch visual direction. The app uses a kawaii Y2K magazine-cover aesthetic with electric cyan, bubblegum pink, lemon sticker badges, glossy 3D-style controls, thick black borders, and playful mascot artwork.
 
+![Landing page preview](src/images/readme-preview.jpg)
+
 ## Features
 
 - Landing page with the exact quiz title, subtitle, and instructions.

@@ -92,7 +92,7 @@ h3,
   font-weight: 900;
   font-style: italic;
   text-transform: uppercase;
-  animation: marquee 24s linear infinite;
+  animation: marquee 90s linear infinite;
 }
 
 .marquee-track span {
