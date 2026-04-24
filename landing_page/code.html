@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,800;0,900;1,800;1,900&amp;family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed": "#002020",
+                    "primary-container": "#00ffff",
+                    "on-tertiary-container": "#6e6800",
+                    "tertiary-fixed-dim": "#d5ca24",
+                    "surface-bright": "#fcf9f8",
+                    "surface-container-highest": "#e5e2e1",
+                    "inverse-primary": "#00dddd",
+                    "on-tertiary": "#ffffff",
+                    "on-surface-variant": "#3a4a49",
+                    "secondary-container": "#fc7ebd",
+                    "surface": "#fcf9f8",
+                    "on-error-container": "#93000a",
+                    "background": "#fcf9f8",
+                    "on-primary-fixed-variant": "#004f4f",
+                    "inverse-surface": "#313030",
+                    "secondary-fixed-dim": "#ffafd2",
+                    "on-secondary-fixed": "#3d0025",
+                    "error-container": "#ffdad6",
+                    "outline-variant": "#b9cac9",
+                    "inverse-on-surface": "#f3f0ef",
+                    "on-surface": "#1c1b1b",
+                    "error": "#ba1a1a",
+                    "surface-variant": "#e5e2e1",
+                    "surface-dim": "#dcd9d9",
+                    "outline": "#6a7a7a",
+                    "on-error": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#007272",
+                    "secondary-fixed": "#ffd8e7",
+                    "on-secondary-container": "#770c4e",
+                    "secondary": "#a13470",
+                    "on-background": "#1c1b1b",
+                    "surface-container": "#f0eded",
+                    "primary-fixed-dim": "#00dddd",
+                    "on-tertiary-fixed": "#1e1c00",
+                    "primary": "#006a6a",
+                    "on-tertiary-fixed-variant": "#4d4800",
+                    "tertiary": "#666000",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed": "#00fbfb",
+                    "surface-tint": "#006a6a",
+                    "tertiary-fixed": "#f2e743",
+                    "on-primary": "#ffffff",
+                    "tertiary-container": "#f5ea46",
+                    "surface-container-high": "#eae7e7",
+                    "on-secondary-fixed-variant": "#831957",
+                    "surface-container-low": "#f6f3f2"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-margin": "20px",
+                    "lg": "48px",
+                    "xs": "4px",
+                    "md": "24px",
+                    "sm": "12px",
+                    "base": "8px",
+                    "xl": "80px",
+                    "gutter": "16px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "label-bold": ["Plus Jakarta Sans"],
+                    "headline-md": ["Epilogue"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Epilogue"],
+                    "headline-xl": ["Epilogue"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "500"}],
+                    "label-bold": ["14px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "1.2", "fontWeight": "800"}],
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "900"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+      }
+      .glossy-button {
+        background: linear-gradient(135deg, #fc7ebd 0%, #a13470 100%);
+        box-shadow: inset 2px 2px 0px rgba(255, 255, 255, 0.4), 
+                    inset -2px -2px 0px rgba(0, 0, 0, 0.2),
+                    0px 6px 0px #770c4e,
+                    0px 10px 20px rgba(161, 52, 112, 0.3);
+      }
+      .glossy-button:active {
+        transform: translateY(4px);
+        box-shadow: inset 2px 2px 0px rgba(255, 255, 255, 0.4), 
+                    inset -2px -2px 0px rgba(0, 0, 0, 0.2),
+                    0px 2px 0px #770c4e;
+      }
+      .sticker-border {
+        box-shadow: 0 0 0 4px white, 0 0 0 7px black;
+      }
+      .marquee {
+        white-space: nowrap;
+        animation: marquee 20s linear infinite;
+      }
+      @keyframes marquee {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+      .bg-electric-cyan {
+        background-color: #00ffff;
+      }
+    </style>
+</head>
+<body class="bg-electric-cyan text-on-background font-body-md min-h-screen overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="flex justify-between items-center w-full px-6 py-4 bg-cyan-400 dark:bg-cyan-900 text-white dark:text-cyan-100 docked full-width top border-b-4 border-black shadow-[0_4px_0_0_rgba(0,0,0,1)] z-50 sticky">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<h1 class="text-2xl font-black text-white drop-shadow-[3px_3px_0px_rgba(0,0,0,1)] italic font-epilogue uppercase italic tracking-tighter">HEALTHY LOVE</h1>
+</div>
+<nav class="hidden md:flex gap-8 items-center font-epilogue font-black uppercase italic tracking-tighter">
+<a class="text-pink-500 underline decoration-4 hover:scale-95 transition-transform duration-100 active:translate-y-1" href="#">Home</a>
+<a class="text-black dark:text-white hover:scale-95 transition-transform duration-100 active:translate-y-1" href="#">My Quizzes</a>
+<a class="text-black dark:text-white hover:scale-95 transition-transform duration-100 active:translate-y-1" href="#">Results</a>
+</nav>
+<div class="flex gap-4">
+<span class="material-symbols-outlined cursor-pointer hover:scale-95 transition-transform">help_outline</span>
+<span class="material-symbols-outlined cursor-pointer hover:scale-95 transition-transform">account_circle</span>
+</div>
+</header>
+<!-- Marquee News Ticker -->
+<div class="bg-secondary text-white py-2 border-b-4 border-black overflow-hidden relative z-10">
+<div class="marquee flex gap-12 font-label-bold uppercase italic text-sm">
+<span>*** NEW QUIZ ALERT! ***</span>
+<span>FIND YOUR LOVE PATTERN NOW</span>
+<span>*** 98% ACCURACY ***</span>
+<span>STOP SELF-SABOTAGE</span>
+<span>*** NEW QUIZ ALERT! ***</span>
+<span>FIND YOUR LOVE PATTERN NOW</span>
+<span>*** 98% ACCURACY ***</span>
+<span>STOP SELF-SABOTAGE</span>
+</div>
+</div>
+<!-- Hero Content -->
+<main class="relative px-container-margin py-lg md:py-xl max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-md items-center">
+<!-- Text Content -->
+<div class="z-20">
+<div class="inline-block bg-tertiary-container text-on-tertiary-container font-label-bold px-4 py-1 border-2 border-black rotate-[-2deg] mb-6 sticker-border">
+                EXCLUSIVE FEATURE
+            </div>
+<h2 class="font-headline-xl text-black drop-shadow-[4px_4px_0px_white] mb-6 leading-none">
+                THE 5 PATTERNS <br/>
+<span class="text-secondary">BLOCKING YOU</span> <br/>
+                FROM HEALTHY LOVE
+            </h2>
+<p class="font-headline-md text-on-primary-fixed-variant mb-10 max-w-md">
+                Find the pattern blocking your love life with our Y2K-inspired diagnostic!
+            </p>
+<button class="glossy-button px-10 py-6 rounded-full text-white font-headline-lg uppercase italic tracking-wider transition-all hover:scale-105 active:scale-95">
+                START QUIZ
+            </button>
+<!-- Social Proof / Magazine Blurb -->
+<div class="mt-xl flex gap-4">
+<div class="bg-white p-4 border-4 border-black rotate-[1deg] shadow-[8px_8px_0_0_rgba(0,0,0,1)] max-w-[200px]">
+<div class="flex text-secondary gap-1 mb-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-label-bold text-xs italic">"This totally read me for filth! A must-try!" — Sarah G.</p>
+</div>
+</div>
+</div>
+<!-- Mascot Composition -->
+<div class="relative flex justify-center items-center py-lg lg:py-0">
+<!-- Background Blob Decoration -->
+<div class="absolute w-[400px] h-[400px] bg-secondary-container rounded-full blur-[80px] opacity-30 animate-pulse"></div>
+<!-- The 3D Mascot -->
+<div class="relative z-10 w-full max-w-[450px]">
+<img alt="3D Kawaii Mascot" class="w-full h-auto rounded-[80px] border-4 border-black shadow-[15px_15px_0px_0px_#770c4e] rotate-[-3deg]" data-alt="A glossy 3D kawaii pear-shaped mascot with large expressive eyes, pink cheeks, and a smiling face, floating on a vibrant colorful background with candy-like texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnSr1MpMB1fy9DH6XTmooX2WiTke4waugHvAMgzBRiji7mlne1YxPjhUPmOvgYp5wzO5GG8UW916rbj9OND0ffMX--X6dmr6MZncqFHYd6v7LXlv9EwtlB1k9UPltqImJY19pvwtJV2BT6ESXgSNMoHVr4JaMxmb3t--YTmzsSjQU_6bv5_mg3riKuDuHkH02brvxlV1ldv-ksUBIfBESGl6nITPGX-jI6Yb8ZYlIhZC0wFnLOgHM3m6rTrrJ02yDvA1OFf5sKAmQ"/>
+<!-- Floating Sticker Labels -->
+<div class="absolute -top-10 -right-4 bg-primary-container border-4 border-black px-4 py-2 rotate-[15deg] sticker-border font-label-bold z-20">
+                    THE GHOST?
+                </div>
+<div class="absolute top-1/4 -left-12 bg-tertiary-fixed border-4 border-black px-4 py-2 rotate-[-10deg] sticker-border font-label-bold z-20">
+                    THE FIXER?
+                </div>
+<div class="absolute bottom-10 -right-8 bg-secondary-fixed border-4 border-black px-4 py-2 rotate-[5deg] sticker-border font-label-bold z-20">
+                    THE RUNNER?
+                </div>
+<!-- Sparkle Icons -->
+<span class="material-symbols-outlined absolute top-0 left-0 text-white text-5xl drop-shadow-md animate-bounce" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="material-symbols-outlined absolute bottom-0 right-1/4 text-white text-4xl drop-shadow-md" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+</div>
+</main>
+<!-- Bento Grid Content -->
+<section class="bg-surface px-container-margin py-xl border-t-4 border-black">
+<div class="max-w-7xl mx-auto">
+<h3 class="font-headline-lg text-black mb-md uppercase italic underline decoration-pink-500 decoration-8">Inside This Quiz</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="bg-white border-4 border-black p-6 shadow-[8px_8px_0_0_#00ffff] hover:-translate-y-2 transition-transform">
+<span class="material-symbols-outlined text-4xl text-secondary mb-4" style="font-variation-settings: 'FILL' 1;">psychology</span>
+<h4 class="font-headline-md mb-2">Deep Psyche</h4>
+<p class="font-body-md text-on-surface-variant">Uncover subconscious behaviors that drive your dating decisions without you even knowing it.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-white border-4 border-black p-6 shadow-[8px_8px_0_0_#fc7ebd] rotate-[-1deg] hover:rotate-0 transition-all">
+<span class="material-symbols-outlined text-4xl text-primary mb-4" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<h4 class="font-headline-md mb-2">Healthy Habits</h4>
+<p class="font-body-md text-on-surface-variant">Get actionable steps to flip your patterns and start attracting the love you actually deserve.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-white border-4 border-black p-6 shadow-[8px_8px_0_0_#f5ea46] hover:-translate-y-2 transition-transform">
+<span class="material-symbols-outlined text-4xl text-on-tertiary-container mb-4" style="font-variation-settings: 'FILL' 1;">share</span>
+<h4 class="font-headline-md mb-2">Shareable Results</h4>
+<p class="font-body-md text-on-surface-variant">Receive a custom "Vibe Card" summarizing your results that's perfect for your IG stories.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action Footer -->
+<footer class="bg-black text-white py-xl px-container-margin text-center">
+<div class="max-w-2xl mx-auto">
+<h2 class="font-headline-xl mb-md">READY TO BREAK THE CYCLE?</h2>
+<p class="font-body-lg text-surface-variant mb-lg">Join 50,000+ others who have transformed their love lives starting with this 5-minute quiz.</p>
+<button class="bg-primary-container text-black px-12 py-5 rounded-xl font-headline-md uppercase border-b-8 border-cyan-800 hover:scale-95 transition-all mb-lg">
+                GET STARTED NOW
+            </button>
+<div class="flex justify-center gap-8 text-surface-dim">
+<a class="hover:text-primary-container transition-colors" href="#">Privacy</a>
+<a class="hover:text-primary-container transition-colors" href="#">Terms</a>
+<a class="hover:text-primary-container transition-colors" href="#">Contact</a>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 px-4 bg-white dark:bg-slate-900 pb-safe border-t-4 border-black rounded-t-2xl shadow-[0_-4px_10px_rgba(0,255,255,0.3)] md:hidden">
+<div class="bg-pink-400 text-white border-2 border-black rounded-xl px-4 py-1 shadow-[2px_2px_0_0_rgba(0,0,0,1)] scale-90 active:scale-110 transition-all flex flex-col items-center">
+<span class="material-symbols-outlined">home</span>
+<span class="font-epilogue font-bold text-[10px] uppercase">Home</span>
+</div>
+<div class="text-black dark:text-slate-400 flex flex-col items-center scale-90 active:scale-110 transition-all hover:bg-cyan-100 dark:hover:bg-cyan-900 transition-colors">
+<span class="material-symbols-outlined">quiz</span>
+<span class="font-epilogue font-bold text-[10px] uppercase">My Quizzes</span>
+</div>
+<div class="text-black dark:text-slate-400 flex flex-col items-center scale-90 active:scale-110 transition-all hover:bg-cyan-100 dark:hover:bg-cyan-900 transition-colors">
+<span class="material-symbols-outlined">insights</span>
+<span class="font-epilogue font-bold text-[10px] uppercase">Results</span>
+</div>
+</nav>
+</body></html>

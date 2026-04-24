@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Healthy Love - Your Results</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@800;900&amp;family=Plus+Jakarta+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed": "#002020",
+                        "primary-container": "#00ffff",
+                        "on-tertiary-container": "#6e6800",
+                        "tertiary-fixed-dim": "#d5ca24",
+                        "surface-bright": "#fcf9f8",
+                        "surface-container-highest": "#e5e2e1",
+                        "inverse-primary": "#00dddd",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#3a4a49",
+                        "secondary-container": "#fc7ebd",
+                        "surface": "#fcf9f8",
+                        "on-error-container": "#93000a",
+                        "background": "#fcf9f8",
+                        "on-primary-fixed-variant": "#004f4f",
+                        "inverse-surface": "#313030",
+                        "secondary-fixed-dim": "#ffafd2",
+                        "on-secondary-fixed": "#3d0025",
+                        "error-container": "#ffdad6",
+                        "outline-variant": "#b9cac9",
+                        "inverse-on-surface": "#f3f0ef",
+                        "on-surface": "#1c1b1b",
+                        "error": "#ba1a1a",
+                        "surface-variant": "#e5e2e1",
+                        "surface-dim": "#dcd9d9",
+                        "outline": "#6a7a7a",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#007272",
+                        "secondary-fixed": "#ffd8e7",
+                        "on-secondary-container": "#770c4e",
+                        "secondary": "#a13470",
+                        "on-background": "#1c1b1b",
+                        "surface-container": "#f0eded",
+                        "primary-fixed-dim": "#00dddd",
+                        "on-tertiary-fixed": "#1e1c00",
+                        "primary": "#006a6a",
+                        "on-tertiary-fixed-variant": "#4d4800",
+                        "tertiary": "#666000",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#00fbfb",
+                        "surface-tint": "#006a6a",
+                        "tertiary-fixed": "#f2e743",
+                        "on-primary": "#ffffff",
+                        "tertiary-container": "#f5ea46",
+                        "surface-container-high": "#eae7e7",
+                        "on-secondary-fixed-variant": "#831957",
+                        "surface-container-low": "#f6f3f2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-margin": "20px",
+                        "lg": "48px",
+                        "xs": "4px",
+                        "md": "24px",
+                        "sm": "12px",
+                        "base": "8px",
+                        "xl": "80px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "label-bold": ["Plus Jakarta Sans"],
+                        "headline-md": ["Epilogue"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Epilogue"],
+                        "headline-xl": ["Epilogue"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "500"}],
+                        "label-bold": ["14px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "1.2", "fontWeight": "800"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "900"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glossy-button {
+            position: relative;
+            overflow: hidden;
+        }
+        .glossy-button::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0));
+            pointer-events: none;
+        }
+        .neo-shadow {
+            box-shadow: 6px 6px 0px 0px rgba(0,0,0,1);
+        }
+        .neo-shadow-sm {
+            box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+        }
+        .sticker-edge {
+            outline: 2px solid white;
+        }
+        .marquee {
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
+            animation: marquee 20s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+    </style>
+</head>
+<body class="bg-background font-body-md text-on-background selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="bg-cyan-400 dark:bg-cyan-900 text-white dark:text-cyan-100 docked full-width top border-b-4 border-black shadow-[0_4px_0_0_rgba(0,0,0,1)] flex justify-between items-center w-full px-6 py-4 sticky top-0 z-50">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-white" data-icon="favorite">favorite</span>
+<h1 class="text-2xl font-black text-white drop-shadow-[3px_3px_0px_rgba(0,0,0,1)] italic font-epilogue uppercase italic tracking-tighter">HEALTHY LOVE</h1>
+</div>
+<nav class="hidden md:flex items-center gap-gutter">
+<a class="text-black dark:text-white font-epilogue font-black uppercase italic tracking-tighter hover:scale-95 transition-transform duration-100 active:translate-y-1" href="#">Home</a>
+<a class="text-black dark:text-white font-epilogue font-black uppercase italic tracking-tighter hover:scale-95 transition-transform duration-100 active:translate-y-1" href="#">My Quizzes</a>
+<a class="text-pink-500 underline decoration-4 font-epilogue font-black uppercase italic tracking-tighter hover:scale-95 transition-transform duration-100 active:translate-y-1" href="#">Results</a>
+</nav>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined cursor-pointer hover:scale-95 transition-transform" data-icon="help_outline">help_outline</span>
+<span class="material-symbols-outlined cursor-pointer hover:scale-95 transition-transform" data-icon="account_circle">account_circle</span>
+</div>
+</header>
+<!-- Marquee Banner -->
+<div class="bg-primary text-on-primary py-2 border-b-4 border-black overflow-hidden">
+<div class="marquee font-epilogue font-black uppercase italic tracking-widest flex gap-8">
+<span>YOU COMPLETED THE LOVE LANGUAGE LAB! • DISCOVER YOUR PATTERN • LOVE BETTER • LIVE LOUDER • YOU COMPLETED THE LOVE LANGUAGE LAB! • DISCOVER YOUR PATTERN • LOVE BETTER • LIVE LOUDER •</span>
+</div>
+</div>
+<main class="max-w-4xl mx-auto px-container-margin py-lg pb-xl">
+<!-- Results Header -->
+<div class="text-center mb-md space-y-xs">
+<p class="font-headline-md text-secondary uppercase italic tracking-tighter">Analysis Complete!</p>
+<h2 class="font-headline-xl text-on-background uppercase italic leading-none">Your Pattern is...</h2>
+</div>
+<!-- Main Result Card -->
+<div class="relative bg-white border-[3px] border-black neo-shadow rounded-xl p-md md:p-lg mb-lg rotate-1 transform-gpu">
+<!-- Sticker Badge -->
+<div class="absolute -top-6 -right-2 bg-secondary-container text-on-secondary-container border-2 border-black px-sm py-xs sticker-edge rotate-12 neo-shadow-sm">
+<span class="font-epilogue font-black italic text-md uppercase">Top Match!</span>
+</div>
+<div class="grid md:grid-cols-2 gap-md items-center">
+<div class="space-y-sm">
+<h3 class="font-headline-xl text-secondary leading-tight uppercase italic">The People Pleaser</h3>
+<p class="font-body-lg text-on-surface-variant">You radiate warmth and empathy, always putting others' needs before your own. While your kindness is a superpower, this pattern suggests you might be losing yourself in the process of keeping the peace.</p>
+<div class="bg-tertiary-container p-sm rounded-lg border-2 border-black neo-shadow-sm flex items-start gap-sm">
+<span class="material-symbols-outlined text-tertiary" data-icon="lightbulb">lightbulb</span>
+<p class="font-label-bold text-on-tertiary-container italic">"Your needs are just as valid as theirs. Try saying 'let me think about it' before agreeing today!"</p>
+</div>
+</div>
+<div class="relative aspect-square">
+<img alt="Abstract Y2K aesthetic illustration" class="w-full h-full object-cover border-[3px] border-black rounded-xl" data-alt="Glossy abstract 3D shapes in pink and cyan floating in a dreamy Y2K aesthetic environment with bubbles and sparkles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdQ4KOBocrqznGMF_KcQek8pWdMO39eqyg1PMEqsJkZe6GC-yZTQJ4lluIalLVTUhUz2Xis-jy8W_QyWZi6D0TOYPKgKW93XL2NU13HAFfbqBJYdqnFcMPwf5DnGh6kQXd9euT2yTJgZP9ynn0DZUgX9gC9u3mjHUY-16LcLar7jiGmc7DFPykpzWE9RwvIA_AX4qjsMt6GfxcAKjdmNoKiiz_JDmfM5zD616ey9CdWffmGEWwAfag7UFwkHZZmCG9k_PfkifCcgg"/>
+<div class="absolute inset-0 bg-gradient-to-tr from-primary-container/20 to-transparent pointer-events-none"></div>
+</div>
+</div>
+</div>
+<!-- Score Summary Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md mb-lg">
+<!-- Comparison Chart Container -->
+<div class="md:col-span-2 bg-surface-container-lowest border-[3px] border-black rounded-xl p-md neo-shadow">
+<h4 class="font-headline-md text-on-background mb-sm uppercase italic border-b-2 border-black pb-xs">Full Spectrum</h4>
+<div class="space-y-md">
+<!-- Bar 1 -->
+<div class="space-y-xs">
+<div class="flex justify-between items-end">
+<span class="bg-secondary-container border-2 border-black px-2 py-0.5 font-epilogue font-black italic text-xs uppercase sticker-edge">People Pleaser</span>
+<span class="font-epilogue font-black">92%</span>
+</div>
+<div class="h-6 w-full bg-surface-container border-2 border-black rounded-full overflow-hidden">
+<div class="h-full bg-secondary border-r-2 border-black rounded-full" style="width: 92%"></div>
+</div>
+</div>
+<!-- Bar 2 -->
+<div class="space-y-xs">
+<div class="flex justify-between items-end">
+<span class="bg-primary-container border-2 border-black px-2 py-0.5 font-epilogue font-black italic text-xs uppercase sticker-edge">The Provider</span>
+<span class="font-epilogue font-black">65%</span>
+</div>
+<div class="h-6 w-full bg-surface-container border-2 border-black rounded-full overflow-hidden">
+<div class="h-full bg-primary border-r-2 border-black rounded-full" style="width: 65%"></div>
+</div>
+</div>
+<!-- Bar 3 -->
+<div class="space-y-xs">
+<div class="flex justify-between items-end">
+<span class="bg-tertiary-container border-2 border-black px-2 py-0.5 font-epilogue font-black italic text-xs uppercase sticker-edge">The Free Spirit</span>
+<span class="font-epilogue font-black">42%</span>
+</div>
+<div class="h-6 w-full bg-surface-container border-2 border-black rounded-full overflow-hidden">
+<div class="h-full bg-tertiary border-r-2 border-black rounded-full" style="width: 42%"></div>
+</div>
+</div>
+<!-- Bar 4 -->
+<div class="space-y-xs">
+<div class="flex justify-between items-end">
+<span class="bg-on-primary-fixed-variant text-white border-2 border-black px-2 py-0.5 font-epilogue font-black italic text-xs uppercase sticker-edge">The Guardian</span>
+<span class="font-epilogue font-black">28%</span>
+</div>
+<div class="h-6 w-full bg-surface-container border-2 border-black rounded-full overflow-hidden">
+<div class="h-full bg-on-primary-fixed border-r-2 border-black rounded-full" style="width: 28%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Mascot/Share Action -->
+<div class="bg-cyan-400 border-[3px] border-black rounded-xl p-md flex flex-col items-center justify-center text-center neo-shadow -rotate-1 transform-gpu">
+<div class="relative mb-sm">
+<img alt="Supportive Mascot" class="w-32 h-32 object-cover rounded-full border-4 border-black sticker-edge" data-alt="Cute friendly marshmallow-like mascot character with a supportive expression and heart eyes in a bright bubblegum pink and cyan palette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPYSkDzkf_pd2rVEowHy_TAoM7EO44DBSkVGco2yxJl4fo3zNzooj3gLevJrNfgQsYLNjo7AH-5gkHeerk6mOv8FAu0bbw67UcFULm-YYsnuDpfUo2ufrGBgrkOsyeOTfvIk5CDavG3aMTuLSuc7YtrooMIEQ7fXYZqO7OMOlDwSIW7I6yN8AXeHKsAn2c9ypbdN4U3CSKgvlw9WM5wDm7eIUcTqWqmpQfC10UfaErmwJf8TfboMgZ7qW7V7HJbVR438mDV72UQMw"/>
+<div class="absolute -bottom-2 -right-2 bg-white rounded-full p-1 border-2 border-black">
+<span class="material-symbols-outlined text-pink-500 text-xl" data-icon="sparkles" style="font-variation-settings: 'FILL' 1;">colors_spark</span>
+</div>
+</div>
+<h5 class="font-headline-md text-white drop-shadow-[2px_2px_0px_rgba(0,0,0,1)] uppercase italic mb-sm">PROUD OF YOU!</h5>
+<p class="font-label-bold text-on-primary-fixed mb-md">Show the world your love vibe!</p>
+<button class="glossy-button w-full bg-pink-500 hover:scale-95 transition-transform text-white font-epilogue font-black py-sm px-md rounded-xl border-b-[6px] border-pink-800 border-x-2 border-t-2 border-black neo-shadow-sm uppercase italic tracking-tighter">
+                    Share My Results
+                </button>
+</div>
+</div>
+<!-- Action Grid -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-md">
+<button class="bg-white border-[3px] border-black p-sm rounded-xl hover:bg-primary-container transition-colors neo-shadow-sm flex flex-col items-center gap-xs">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="replay">replay</span>
+<span class="font-label-bold uppercase italic text-[10px]">Retake Quiz</span>
+</button>
+<button class="bg-white border-[3px] border-black p-sm rounded-xl hover:bg-secondary-container transition-colors neo-shadow-sm flex flex-col items-center gap-xs">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="school">school</span>
+<span class="font-label-bold uppercase italic text-[10px]">Deep Dive</span>
+</button>
+<button class="bg-white border-[3px] border-black p-sm rounded-xl hover:bg-tertiary-container transition-colors neo-shadow-sm flex flex-col items-center gap-xs">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="groups">groups</span>
+<span class="font-label-bold uppercase italic text-[10px]">Compare Friends</span>
+</button>
+<button class="bg-white border-[3px] border-black p-sm rounded-xl hover:bg-on-primary-fixed-variant hover:text-white transition-colors neo-shadow-sm flex flex-col items-center gap-xs">
+<span class="material-symbols-outlined text-3xl" data-icon="download">download</span>
+<span class="font-label-bold uppercase italic text-[10px]">Save Card</span>
+</button>
+</div>
+</main>
+<!-- BottomNavBar (Mobile) -->
+<footer class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 px-4 bg-white dark:bg-slate-900 border-t-4 border-black rounded-t-2xl shadow-[0_-4px_10px_rgba(0,255,255,0.3)] pb-safe">
+<a class="text-black dark:text-slate-400 flex flex-col items-center scale-90 active:scale-110 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-epilogue font-bold text-[10px] uppercase">Home</span>
+</a>
+<a class="text-black dark:text-slate-400 flex flex-col items-center scale-90 active:scale-110 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="quiz">quiz</span>
+<span class="font-epilogue font-bold text-[10px] uppercase">My Quizzes</span>
+</a>
+<a class="bg-pink-400 text-white border-2 border-black rounded-xl px-4 py-1 shadow-[2px_2px_0_0_rgba(0,0,0,1)] flex flex-col items-center scale-90 active:scale-110 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="insights">insights</span>
+<span class="font-epilogue font-bold text-[10px] uppercase">Results</span>
+</a>
+</footer>
+<!-- FAB Suppression Logic Applied (Not rendered on Results screen) -->
+</body></html>
