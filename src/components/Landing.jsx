@@ -23,7 +23,6 @@ function Landing({ onStart }) {
           <div className="sticker">EXCLUSIVE FEATURE</div>
           <h1>{landingCopy.title}</h1>
           <p className="subtitle">{landingCopy.subtitle}</p>
-          <p className="instructions">{landingCopy.instructions}</p>
           <button className="primary-button" type="button" onClick={onStart}>
             <Icon filled>favorite</Icon>
             START QUIZ
