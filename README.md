@@ -27,25 +27,3 @@ npm run build
 ```
 
 The built site is created in `dist/`.
-
-## Deploy To GitHub Pages
-
-The repo is already prepared for GitHub Pages with:
-
-- `vite.config.js` using `base: "/love-quiz/"`
-- `.github/workflows/deploy.yml` building and deploying `dist/`
-
-To deploy:
-
-1. Push the latest code to the `main` branch.
-2. Open the repository on GitHub.
-3. Go to `Settings` -> `Pages`.
-4. Under `Build and deployment`, set `Source` to `GitHub Actions`.
-5. Go to the `Actions` tab and open `Deploy to GitHub Pages`.
-6. Wait for the workflow to finish.
-
-The site should be available at:
-
-```text
-https://avollrath.github.io/love-quiz/
-```
