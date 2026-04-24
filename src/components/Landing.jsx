@@ -2,12 +2,16 @@ import { landingCopy } from "../data/quizData.js";
 import heroImage from "../images/hero.jpg";
 import Icon from "./Icon.jsx";
 
+const marqueeText =
+  "FIND YOUR LOVE PATTERN \u2022 REAL LOVE ONLY \u2022 START THE QUIZ \u2022 FIND YOUR LOVE PATTERN \u2022 REAL LOVE ONLY \u2022 START THE QUIZ \u2022";
+
 function Landing({ onStart }) {
   return (
     <main className="landing-screen">
       <div className="marquee" aria-hidden="true">
-        <div>
-          FIND YOUR LOVE PATTERN • REAL LOVE ONLY • START THE QUIZ • FIND YOUR LOVE PATTERN • REAL LOVE ONLY • START THE QUIZ •
+        <div className="marquee-track">
+          <span>{marqueeText}</span>
+          <span>{marqueeText}</span>
         </div>
       </div>
 

@@ -84,14 +84,22 @@ h3,
   color: #fff;
 }
 
-.marquee div {
+.marquee-track {
+  display: flex;
   width: max-content;
+  min-width: 200%;
   padding: 10px 0;
   font-family: "Epilogue", system-ui, sans-serif;
   font-weight: 900;
   font-style: italic;
   text-transform: uppercase;
   animation: marquee 24s linear infinite;
+}
+
+.marquee-track span {
+  flex: 0 0 auto;
+  min-width: 50%;
+  padding-right: 48px;
 }
 
 @keyframes marquee {
