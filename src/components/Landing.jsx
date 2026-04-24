@@ -5,13 +5,16 @@ import Icon from "./Icon.jsx";
 const marqueeText =
   "FIND YOUR LOVE PATTERN \u2022 REAL LOVE ONLY \u2022 START THE QUIZ \u2022 FIND YOUR LOVE PATTERN \u2022 REAL LOVE ONLY \u2022 START THE QUIZ \u2022";
 
+const marqueeItems = Array.from({ length: 8 }, (_, index) => (
+  <span key={index}>{marqueeText}</span>
+));
+
 function Landing({ onStart }) {
   return (
     <main className="landing-screen">
       <div className="marquee" aria-hidden="true">
         <div className="marquee-track">
-          <span>{marqueeText}</span>
-          <span>{marqueeText}</span>
+          {marqueeItems}
         </div>
       </div>
 
