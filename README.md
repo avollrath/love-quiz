@@ -2,6 +2,8 @@
 
 A playful quiz that helps people spot which dating pattern may be getting in the way of healthier love. Answer 25 quick statements, get a score for each of the five patterns, and read the result description for your highest-scoring pattern.
 
+[Try the quiz](https://avollrath.github.io/love-quiz/)
+
 ![Landing page preview](src/images/readme-preview.jpg)
 
 ## What It Does
