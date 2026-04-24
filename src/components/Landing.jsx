@@ -1,4 +1,5 @@
 import { landingCopy } from "../data/quizData.js";
+import heroImage from "../images/hero.jpg";
 import Icon from "./Icon.jsx";
 
 function Landing({ onStart }) {
@@ -26,7 +27,7 @@ function Landing({ onStart }) {
           <div className="mascot-card">
             <img
               alt=""
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnSr1MpMB1fy9DH6XTmooX2WiTke4waugHvAMgzBRiji7mlne1YxPjhUPmOvgYp5wzO5GG8UW916rbj9OND0ffMX--X6dmr6MZncqFHYd6v7LXlv9EwtlB1k9UPltqImJY19pvwtJV2BT6ESXgSNMoHVr4JaMxmb3t--YTmzsSjQU_6bv5_mg3riKuDuHkH02brvxlV1ldv-ksUBIfBESGl6nITPGX-jI6Yb8ZYlIhZC0wFnLOgHM3m6rTrrJ02yDvA1OFf5sKAmQ"
+              src={heroImage}
             />
             <span className="floating-sticker top">THE ICK?</span>
             <span className="floating-sticker left">THE FANTASY?</span>
