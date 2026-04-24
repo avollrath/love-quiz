@@ -1,48 +1,51 @@
 # THE 5 PATTERNS BLOCKING YOU FROM HEALTHY LOVE
 
-A polished desktop-first React quiz based on the provided Google Stitch visual direction. The app uses a kawaii Y2K magazine-cover aesthetic with electric cyan, bubblegum pink, lemon sticker badges, glossy 3D-style controls, thick black borders, and playful mascot artwork.
+A playful quiz that helps people spot which dating pattern may be getting in the way of healthier love. Answer 25 quick statements, get a score for each of the five patterns, and read the result description for your highest-scoring pattern.
 
 ![Landing page preview](src/images/readme-preview.jpg)
 
-## Features
+## What It Does
 
-- Landing page with the exact quiz title, subtitle, and instructions.
-- Five pattern sections shown in order.
-- Five scored statements per pattern.
-- Four answer choices per statement: `0 = Never`, `1 = Sometimes`, `2 = Often`, `3 = Almost Always`.
-- Per-pattern scoring with all scores shown at the end.
-- Tie handling that displays every highest-scoring pattern.
-- Exact score meaning and full result descriptions from the supplied quiz copy.
-- Restart flow with no backend, login, database, or analytics.
+- Starts with a landing page and simple instructions.
+- Walks through 5 patterns with 5 statements each.
+- Scores each pattern separately from `0` to `15`.
+- Shows all pattern scores at the end.
+- Shows all tied highest-scoring patterns if there is a tie.
+- Includes a restart button.
 
-## Tech Stack
-
-- React
-- Vite
-- Plain CSS
-- GitHub Pages workflow
-
-## Local Development
+## Run Locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Build
+## Build Locally
 
 ```bash
 npm run build
 ```
 
-The production output is written to `dist/`.
+The built site is created in `dist/`.
 
-## GitHub Pages
+## Deploy To GitHub Pages
 
-This project is configured for the repository path:
+The repo is already prepared for GitHub Pages with:
+
+- `vite.config.js` using `base: "/love-quiz/"`
+- `.github/workflows/deploy.yml` building and deploying `dist/`
+
+To deploy:
+
+1. Push the latest code to the `main` branch.
+2. Open the repository on GitHub.
+3. Go to `Settings` -> `Pages`.
+4. Under `Build and deployment`, set `Source` to `GitHub Actions`.
+5. Go to the `Actions` tab and open `Deploy to GitHub Pages`.
+6. Wait for the workflow to finish.
+
+The site should be available at:
 
 ```text
 https://avollrath.github.io/love-quiz/
 ```
-
-The included GitHub Actions workflow builds and deploys the app from the `main` branch.
